@@ -10,7 +10,7 @@ ul{
 }
 li{
     float:left;
-    left:50px;
+    left:100px;
 }
 li a{
     display: block;

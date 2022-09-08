@@ -8,3 +8,8 @@ def inicio(request):
 def acerca(request):
     return render (request,'acerca.html')
 
+def productos(request):
+    return render(request,'productos.html')
+
+def contacto(request):
+    return render(request,'contacto.html')

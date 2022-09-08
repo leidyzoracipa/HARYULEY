@@ -20,6 +20,8 @@ from interfaces import views
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('',views.inicio),
-    path('acerca', views.acerca)
+    path('acerca', views.acerca),
+    path('productos',views.productos),
+    path('contacto',views.contacto),
 
 ]

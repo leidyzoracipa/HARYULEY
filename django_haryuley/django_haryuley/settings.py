@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+STATICFILES_DIRS = ['C:/Users/LEIDY MORA/Desktop/HARYULEY/django_haryuley/interfaces/templates/static']
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'interfaces',
+    
 ]
 
 MIDDLEWARE = [

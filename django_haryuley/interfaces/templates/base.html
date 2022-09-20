@@ -6,16 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titulo %} {% endblock %}</title>
-    <link href="{% static 'css/estilos.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static '/css/estilos.css' %}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <ul>
-        <li><img src="static/imagenes/logo.png" style ="width:45px; height:45px;"</li>
-        <li><a href="Inicio.html">Inicio</a></li>
-        <li><a href="acerca.html">Acerca de</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>  
+    <div class="menu">
+        <div>
+            <ul>
+                <li><img src="static/imagenes/logo.png" style ="width:50px; height:50px;"</li>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Oferta.html"> Ofertas</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="login">
+                <li><a class="registro" href="Registro.html">Registrarse</a></li>
+                <li><a class="sesion" href="login.html">Iniciar Sesion</a></li>
+            </ul>
+        </div>
+    </div>
     {%block contenido%} {% endblock %}
 </body>
 </html>

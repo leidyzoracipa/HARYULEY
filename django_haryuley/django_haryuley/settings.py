@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_DIRS = ['C:/Users/LEIDY MORA/Desktop/HARYULEY/django_haryuley/interfaces/templates/static']
+STATICFILES_DIRS = ['C:/Users/LEIDY MORA/Desktop/proyecto MISION TIC UTP/HARYULEY/django_haryuley/interfaces/templates/static']
 # Application definition
 
 INSTALLED_APPS = [
@@ -77,8 +77,15 @@ WSGI_APPLICATION = 'django_haryuley.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'haryuley',
+        'USER': 'sistemas',
+        'PASSWORD':'123456789',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "Set sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 

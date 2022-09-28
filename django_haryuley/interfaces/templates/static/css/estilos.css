@@ -3,7 +3,7 @@ h1{
 }
 .menu{
     list-style-type:none ;
-    background-color:#f1dcf0c6;
+    background-color:#e387c1a0;
     overflow: hidden;
     margin:0;
     padding:0;
@@ -20,7 +20,7 @@ li a{
     text-decoration: none;
 }
 li a:hover{
-    background-color:#e5c9ed;
+    background-color:#efd5ea;
 }
 
 .login li{
@@ -33,20 +33,26 @@ li a:hover{
     display: block;
     color:white;
     padding:0px;
-    text-decoration: rgb(205, 51, 205);
+    text-decoration: rgb(230, 104, 230);
 }
 
 .registro{
     float:right;
     overflow: hidden;
     margin: 9px 9px;
-    background-color:rgb(240, 119, 240);
+    background: linear-gradient(#f2b6f2, #90f1e7 ) ;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .sesion{
     float:right;
     overflow:hidden;
     margin: 9px 9px;
-    background-color:rgb(241, 114, 176)
-
+    background-color:rgb(223, 79, 148);
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid rgb(197, 0, 95);
 }
+
+

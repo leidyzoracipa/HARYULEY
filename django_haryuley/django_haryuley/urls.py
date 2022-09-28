@@ -19,12 +19,13 @@ from interfaces import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.inicio),
-    path('acerca', views.acerca),
-    path('productos',views.productos),
-    path('contacto',views.contacto),
-    path('login',views.login),
-    path('Registro',views.Registro),
-    path('Oferta',views.Oferta),
+    path('',views.inicio, name="inicio"),
+    path('acerca', views.acerca, name="acerca"),
+    path('productos',views.productos, name="productos"),
+    path('contacto',views.contacto, name="contacto"),
+    path('login',views.login, name="login"),
+    path('Registro',views.Registro, name="Registro"),
+    path('Oferta',views.Oferta, name="oferta"),
+    path('usuario', views.usuario, name="usuario"),
 
 ]

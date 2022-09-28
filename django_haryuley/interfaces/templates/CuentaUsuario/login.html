@@ -3,22 +3,25 @@
 {%block titulo%} Confecciones HARYULEY {% endblock %}
 
 {%block contenido%} 
-    <h1>inicio de sesion</h1>
+    <form class="formulario" method="POST">
+        {% csrf_token %}
+            <legend>Login</legend>
+            <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario"/><br>
+            </label>
+            <label for="pass1"><br>
 
-        <form method="post">
-            <label for="usuario">
+                password
+                <input type="password" id="pass1" name="pass1"><br>
                 <br>
-                Usuario
-                <input type="text" name="username"
+
             </label>
-            <label for="password">
-            <br>
-                contraseña
-                <input type="password" name="password">
-            </label>
-            <button type="submit">Iniciar sesion</button>
+            <button type="submit">Iniciar sesion</button><br>
+
+            <button type="submit">cerrar sesion </button>
+            
         </form>
             <br>
-            <a href="{% url 'salir' %"> cerrar sesion</a>
-            <br>
+</body>
+</html>
 {% endblock %}
